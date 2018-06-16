@@ -1,5 +1,4 @@
 /* document styles */
-
 html, body {
   font-size: 18px;
   font-family: Helvetica;
@@ -18,21 +17,23 @@ h1, h3 {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 
 /* Header */
 
 header {
-  width: 100%;
   background-color: black;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
 }
 
 header img {
   height: 1.5rem;
   width: auto;
-  padding-left: 0.5rem;
   padding-right: 1rem;
 }
 
@@ -55,7 +56,8 @@ header span {
   background-color: black;
   padding: 2rem 3rem;
   width: 20rem;
-  margin-top: 9rem;
+  top: 9rem;
+  position: relative;
 }
 
 .announcement h3 {
@@ -73,32 +75,24 @@ header span {
 }
 
 nav {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   justify-content: space-between;
-}
-
-nav span {
   padding: 0.75rem 0;
 }
 
-
 /* Product Section */
 
-.product-grid {
-  width: 100%;
-  display: inline-flex;
+.product-grid,
+.info-section {
+  display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .product {
-  border: 4px solid black;
   margin: 3rem 0;
   width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .product-image {
@@ -106,13 +100,13 @@ nav span {
   height: 9rem;
   width: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border: 4px solid black;
 }
 
 .product img {
   max-width: 8rem;
-  height: auto;
 }
 
 .product span {
@@ -120,6 +114,7 @@ nav span {
   text-align: center;
   width: 100%;
   padding: 0.5rem 0;
+  display: block;
 }
 
 /* Info Section */
@@ -151,10 +146,8 @@ nav span {
 
 footer {
   background-color: black;
-}
-
-footer .container {
-  height: 5rem;
+  padding: 5rem 0;
+  margin-top: 4rem;
 }
 
 /* MEDIA */
