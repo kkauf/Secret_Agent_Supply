@@ -1,0 +1,55 @@
+/* document styles */
+
+html, body {
+  font-size: 18px;
+  font-family: Helvetica;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1, h3 {
+  font-weight: bold;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  background-color: black;
+}
+
+header img {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+header span {
+  padding: 0.66rem;
+  text-transform: uppercase;
+}
+
+/* Main Banner */
+
+.main-banner {
+  height: 25rem;
+}
+
+.announcement {
+  background-color: black;
+  padding: 2rem 3rem;
+  width: 20rem;
+
+
+}
